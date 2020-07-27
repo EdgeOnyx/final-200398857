@@ -27,7 +27,7 @@ const TourSchema = new mongoose.Schema({
   groupSize: {
     type: Number,
     default: 1,
-    required: true
+    //required: true
   },
   date: {
     type: Date,

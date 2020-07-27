@@ -48,6 +48,9 @@ function Routes ({user, setUser}) {
 
           In your own words, please explain what is happening in the logic below.
           ANSWER HERE:
+          In the cases below when any of the paths below are accessed it rederes the 
+          UI, it also checks if the person accesing the page is a registered user
+          and if not it redrects them to the home page   
         */
       }
       <Route exact path="/tours" render={
