@@ -12,7 +12,7 @@ const Edit = function (props) {
   const [tourTypes] = useState({
 
   });
-  
+
   const [inputs, setInputs] = useState({
     title: '',
     tourType: '',
@@ -86,11 +86,13 @@ const Edit = function (props) {
               as="select"
               name="tourType"
               onChange={handleInputChange}
-              defaultValue={inputs.tourType}
+             defaultValue={inputs.tourType || `I'm too young to die` }
             >
-              {tourTypes.map((type, i) => (
-                <option key={i} value={type}>{type}</option>
-              ))} 
+            <option value="I'm too young to die">Im too young to die</option>
+            <option value="Hurt me plenty">Hurt me plenty</option>
+            <option value="Ultra-violence">Ultra-violence</option>
+            <option value="Nightmare">Nightmare</option>
+            <option value="Ultra-nightmare">Ultra-nightmare</option>
             </Form.Control>
           </Form.Group>
 
